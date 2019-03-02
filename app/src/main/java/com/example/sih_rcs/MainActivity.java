@@ -1,9 +1,9 @@
 package com.example.sih_rcs;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         googleSignIn=(SignInButton)findViewById(R.id.googlesignIn);
         mAuth = FirebaseAuth.getInstance();
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("891410590834-hp2usis111f9jg1na91veddfgh0ndf11.apps.googleusercontent.com")
+                .requestIdToken("699122620332-e5vkmgbpmn27cd9fub3l19bdg9scbgbd.apps.googleusercontent.com")
                 .requestEmail()
                 .build();
 
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         Signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, com.example.rcsjava.RegistrationActivity.class));
+                startActivity(new Intent(MainActivity.this,RegistrationActivity.class));
             }
         });
 
